@@ -1,0 +1,61 @@
+import pandas as pd
+
+# Create the structure for the January and February expenses for Juan
+january_data = {
+    'Category': ['Transportation', 'Groceries', 'Other'],
+    'Budgeted (Pesos)': [500, 3000, 700],
+    'Actual (Pesos)': [530, 3100, 770],
+    'Difference (Pesos)': [-30, -100, -70]
+}
+
+february_spending = {
+    'Date': ['2/1', '2/1', '2/3', '2/3', '2/4', '2/4'],
+    'Expense Category': ['Rent', 'Utilities', 'Tithing', 'Fast offering', 'Transportation', 'Groceries'],
+    'Amount (Pesos)': [10500, 3611.39, 4100, 300, 500, 1293.75]
+}
+
+february_budget = {
+    'Category': ['Groceries', 'Transportation', 'Utilities', 'Rent', 'Tithing', 'Fast offering', 'Savings'],
+    'Original Goal (Pesos)': [3500, 2000, 4000, 10500, 4100, 500, 0],
+    'Adjusted Goal (Pesos)': [3000, 1800, 3500, 10500, 4100, 300, 500]
+}
+
+# Create the structure for the user's own budget
+user_income = {
+    'Income Source': ['Salary', 'Side Job'],
+    'Amount (Pesos)': [45000, 5000]
+}
+
+user_budget = {
+    'Category': ['Rent', 'Utilities', 'Groceries', 'Transportation', 'Entertainment', 'Savings', 'Miscellaneous'],
+    'Budget (Pesos)': [15000, 4000, 6000, 3000, 2000, 5000, 2000]
+}
+
+# Create dataframes from the data
+january_df = pd.DataFrame(january_data)
+february_spending_df = pd.DataFrame(february_spending)
+february_budget_df = pd.DataFrame(february_budget)
+user_income_df = pd.DataFrame(user_income)
+user_budget_df = pd.DataFrame(user_budget)
+
+# Calculate the total budgeted and remaining for the user budget
+total_budgeted = user_budget_df['Budget (Pesos)'].sum()
+remaining = 50000 - total_budgeted
+
+# Append the totals to the user budget dataframe
+user_budget_df = user_budget_df.append(
+    {'Category': 'Total Expenses', 'Budget (Pesos)': total_budgeted}, ignore_index=True)
+user_budget_df = user_budget_df.append(
+    {'Category': 'Remaining (Savings/Extra)', 'Budget (Pesos)': remaining}, ignore_index=True)
+
+# Write dataframes to an Excel file
+with pd.ExcelWriter('/mnt/data/math108x_doc_budgetingCSExcel_updated.xlsx') as writer:
+    january_df.to_excel(writer, sheet_name='January Expenses', index=False)
+    february_spending_df.to_excel(
+        writer, sheet_name='February Spending', index=False)
+    february_budget_df.to_excel(
+        writer, sheet_name='February Budget', index=False)
+    user_income_df.to_excel(writer, sheet_name='User Income', index=False)
+    user_budget_df.to_excel(writer, sheet_name='User Budget', index=False)
+
+'/mnt/data/math108x_doc_budgetingCSExcel_updated.xlsx'
