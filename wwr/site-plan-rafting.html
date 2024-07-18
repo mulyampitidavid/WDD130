@@ -3,122 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafting Site Plan | DAVID MULYAMPITI</title>
-    <meta name="description" content="Current students enrolled in the course, prospective students interested in the course, Faculty members and teaching assistants, Educational administrators and the whole website would designed to meet the needs of a diverse group of users, ensuring ease of access, clarity of information, and a user-friendly interface">
+    <title>About Us - Rafting Company | DAVID MULYAMPITI</title>
+    <meta name="description" content="Learn about our rafting company, our history, and the thrilling adventures we offer.">
     <meta name="author" content="DAVID MULYAMPITI">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
-
-        :root {
-            --primary-color: #580cf1;
-            --secondary-color: #59DACD;
-            --accent1-color: #596FDA;
-            --accent2-color: #12AFAF;
-            --heading-font: 'Roboto', sans-serif;
-            --paragraph-font: 'Open Sans', sans-serif;
-            --nav-bg-color: var(--primary-color);
-            --nav-link-color: #fff;
-            --nav-hover-link-color: var(--secondary-color);
-            --nav-hover-bg-color: var(--accent1-color);
-        }
-
-        body {
-            font-family: var(--paragraph-font);
-            max-width: 960px;
-            padding: 20px;
-            margin: 0 auto;
-        }
-
-        header {
-            padding: 20px;
-            background-color: var(--primary-color);
-            color: #fff;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        header div {
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        h2, h3, h4 {
-            font-family: var(--heading-font);
-            color: var(--accent1-color);
-        }
-
-        p {
-            padding: 10px 0;
-        }
-
-        nav {
-            background-color: var(--nav-bg-color);
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: var(--nav-link-color);
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
-            display: inline-block;
-        }
-
-        nav a:hover {
-            background-color: var(--nav-hover-bg-color);
-            color: var(--nav-hover-link-color);
-        }
-    </style>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
-        <h1>Rafting Site Plan</h1>
-        <div>
-            DAVID MULYAMPITI
-        </div>
-    </header>
-    <main>
-        <h2>Overview</h2>
-        <h3>Purpose</h3>
-        <p>The website provides detailed information about rafting services offered, including types of trips, difficulty levels, duration, pricing, and safety measures. High-quality images and videos can showcase the thrilling experiences customers can expect.</p>
-        <h3>Audience</h3>
-        <p>Individuals who actively seek out adventure sports and outdoor activities. This group includes people who enjoy activities like hiking, climbing, kayaking, and other high-energy pursuits.</p>
-        <h2>Branding</h2>
-        <h3>Website Logo</h3>
-        <img src="images/Rafting.webp" alt="Rafting Site Logo"> 
-        <h2>Style Guide</h2>
-        <h3>Color Palette</h3>
-        <p>
-            <strong>Primary Color:</strong> #59C2DA<br>
-            <strong>Secondary Color:</strong> #59DACD<br>
-            <strong>Accent1 Color:</strong> #596FDA<br>
-            <strong>Accent2 Color:</strong> #12AFAF<br>
-        </p>
-        <h3>Typography</h3>
-        <h4>Heading Example Font: Roboto (Sans-serif)</h4>
-        <h4>Normal Text/Paragraph Example Font: Open Sans (Sans-serif)</h4>
-        <p></p>
-        <h4>Colored Callout Example Font: Roboto (Sans-serif)</h4>
-        <p></p>
-        <h3>Navigation</h3>
+        <!-- Logo -->
+        <img src="images/Rafting.webp" alt="Rafting Company Logo">
+        
+        <!-- Navigation -->
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Trips</a>
-            <a href="#">Contact Us</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
-        <h2>Wireframe</h2>
-        <h3>Home Page Wireframe</h3>
-        <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-home.png" alt="Home Page Wireframe Example Design" width="700">
-        <h3>About Us Page Wireframe</h3>
-        <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-aboutus-update.png" alt="About Us Page Wireframe Design" width="700">
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <div class="hero">
+            <img src="images/hero-image.jpg" alt="Rafting Adventure">
+            <h1>Rafting Company Name</h1>
+            <article>
+                <img src="images/happy-client.jpg" alt="Happy Client">
+                <p>Our company's purpose is to provide thrilling rafting experiences while ensuring safety and environmental responsibility. We aim to create unforgettable adventures for individuals who actively seek out outdoor activities and high-energy pursuits.</p>
+            </article>
+        </div>
+
+        <!-- History section -->
+        <section>
+            <h2>History</h2>
+            <p>Founded in 2010, our company has been offering exciting rafting experiences for over a decade. We've grown from a small local operation to a respected name in adventure tourism, always prioritizing safety and customer satisfaction.</p>
+        </section>
+
+        <!-- Adventure section -->
+        <section>
+            <h2>Adventure Awaits You!</h2>
+            <img src="images/rafting1.jpg" alt="Rafting Adventure 1">
+            <img src="images/rafting2.jpg" alt="Rafting Adventure 2">
+            <img src="images/rafting3.jpg" alt="Rafting Adventure 3">
+            <img src="images/rafting4.jpg" alt="Rafting Adventure 4">
+            <img src="images/rafting5.jpg" alt="Rafting Adventure 5">
+        </section>
     </main>
+
     <footer>
-        <p>©2024 🌴 Rafting Site Document 🌴 DAVID MULYAMPITI 🌴 WDD 130</p>
+        <p>&copy; 2024 Rafting Company Name - DAVID MULYAMPITI</p>
+        <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="Facebook"></a>
+        <a href="https://twitter.com"><img src="images/twitter-icon.png" alt="Twitter"></a>
+        <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
     </footer>
 </body>
 </html>
