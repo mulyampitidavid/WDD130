@@ -1,7 +1,15 @@
-main{
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
     max-width: 840px;
-}
-aside{
+  }
+  
+  aside {
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -9,20 +17,50 @@ aside{
     background-color: #eee;
     color: #333;
     text-align: center;
-}
-aside img{
+    position: relative; /* Added for absolute positioning of h2 */
+  }
+  
+  aside img {
     width: 200px;
     height: auto;
-}
-main img{
+  }
+  
+  main img {
     width: 150px;
     height: auto;
-}
-p{padding: 0;}
-footer{
+  }
+  
+  p {
+    padding: 0;
+  }
+  
+  footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-}
-
-    
+  }
+  
+  /* Class Selectors */
+  .box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Float profile image */
+  .profile-image {
+    float: right;
+    margin: 0 0 1rem 1rem;
+  }
+  
+  /* Positioning for the aside heading */
+  aside h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+  }
+  
