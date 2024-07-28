@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with White Water Rafting Adventures. Contact us for inquiries, reservations, or suggestions.">
-    <title>Contact Us | White Water Rafting</title>
+    <meta name="description" content="Get in touch with Rafting Company. Contact us for inquiries, reservations, or website suggestions.">
+    <title>Contact Us | Rafting Company</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Header and Navigation -->
     <header>
-        <h1>White Water Rafting Adventures</h1>
+        <img src="images/logo.png" alt="Rafting Company Logo" class="logo">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
+        <h1>Contact Us</h1>
         <section id="company-info">
             <h2>Contact Information</h2>
             <p>Address: 123 Rafting St, River City, USA</p>
@@ -31,24 +30,24 @@
             <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" allowfullscreen></iframe>
         </section>
 
-        <section id="team">
+        <section id="employee-profiles">
             <h2>Our Team</h2>
             <div class="employee">
-                <img src="images/employee1.jpg" alt="John Doe, Guide">
-                <figcaption>John Doe, Guide</figcaption>
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <p>John Doe, Guide</p>
             </div>
             <div class="employee">
-                <img src="images/employee2.jpg" alt="Jane Smith, Manager">
-                <figcaption>Jane Smith, Manager</figcaption>
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <p>Jane Smith, Manager</p>
             </div>
             <div class="employee">
-                <img src="images/employee3.jpg" alt="Emily Brown, Customer Service">
-                <figcaption>Emily Brown, Customer Service</figcaption>
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <p>Emily Brown, Customer Service</p>
             </div>
         </section>
 
         <section id="contact-form">
-            <h2>Contact Us</h2>
+            <h2>Send Us a Message</h2>
             <form action="submit_form.php" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -56,7 +55,7 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label>Purpose of Message:</label>
+                <label for="purpose">Purpose of Message:</label>
                 <div>
                     <input type="radio" id="general" name="purpose" value="general">
                     <label for="general">General Inquiry</label>
@@ -83,9 +82,8 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 White Water Rafting Adventures</p>
+        <p>&copy; 2024 Rafting Company | Designed by Your Name</p>
         <div class="social-media">
             <a href="#"><img src="images/social-facebook.png" alt="Facebook"></a>
             <a href="#"><img src="images/social-twitter.png" alt="Twitter"></a>
@@ -93,4 +91,5 @@
         </div>
     </footer>
 </body>
+
 </html>
