@@ -22,6 +22,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #f5f5f5;
 }
 
 /* Header styling */
@@ -30,16 +31,18 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-}
-
-header .logo {
-    height: 50px;
+    background-color: var(--primary-color);
 }
 
 header nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #333;
+    color: white;
+    font-weight: 700;
+}
+
+header nav a:hover {
+    color: var(--secondary-color);
 }
 
 /* Hero section styling */
@@ -50,6 +53,7 @@ header nav a {
 
 .hero-image {
     width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -59,8 +63,9 @@ header nav a {
     left: 20px;
     background: rgba(255, 255, 255, 0.8);
     padding: 10px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
+    border-radius: 5px;
 }
 
 .hero article {
@@ -69,20 +74,39 @@ header nav a {
     left: 20px;
     background: rgba(255, 255, 255, 0.8);
     padding: 10px;
+    border-radius: 5px;
 }
 
-.hero .client-image {
-    float: right;
-    margin-left: 10px;
+.hero .btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.hero .btn:hover {
+    background: var(--secondary-color);
 }
 
 /* Section styling */
 section {
     margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
 }
 
 section h2 {
     color: var(--primary-color);
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+section p {
     margin-bottom: 10px;
 }
 
@@ -96,8 +120,10 @@ section img {
 footer {
     text-align: center;
     margin-top: 20px;
-    padding-top: 10px;
-    border-top: 1px solid #ccc;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border-top: 2px solid var(--secondary-color);
 }
 
 footer p {
@@ -112,6 +138,7 @@ footer a img {
 
 footer a {
     text-decoration: none;
+    color: white;
 }
 
 /* Contact Us Page Styling */
@@ -135,6 +162,9 @@ footer a {
 form {
     max-width: 600px;
     margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
 }
 
 form label {
@@ -146,6 +176,8 @@ form input, form textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 form input[type="radio"] {
@@ -160,10 +192,11 @@ form button {
     border: none;
     margin-top: 10px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 form button:hover {
-    background: #555;
+    background: #333;
 }
 
 /* Google Map iframe styling */
@@ -172,4 +205,21 @@ iframe {
     height: 450px;
     border: none;
     margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Box styling for better section separation */
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
