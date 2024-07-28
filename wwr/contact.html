@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with W05 Rafting Project. Contact us for inquiries, reservations, or website suggestions.">
+    <title>Contact Us - W05 Rafting Project</title>
+    <link rel="stylesheet" href="rafting.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <h1>W05 Rafting Project</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="company-info">
+            <h2>Contact Information</h2>
+            <p>Address: 123 Rafting St, River City, USA</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@rafting.com</p>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" allowfullscreen></iframe>
+        </section>
+
+        <section id="employee-profiles">
+            <h2>Our Team</h2>
+            <div class="employee">
+                <img src="employee1.jpg" alt="Employee 1">
+                <figcaption>John Doe, Guide</figcaption>
+            </div>
+            <div class="employee">
+                <img src="employee2.jpg" alt="Employee 2">
+                <figcaption>Jane Smith, Manager</figcaption>
+            </div>
+            <div class="employee">
+                <img src="employee3.jpg" alt="Employee 3">
+                <figcaption>Emily Brown, Customer Service</figcaption>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="purpose">Purpose of Message:</label>
+                <div>
+                    <input type="radio" id="general" name="purpose" value="general">
+                    <label for="general">General Inquiry</label>
+                </div>
+                <div>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <div>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 W05 Rafting Project</p>
+        <p><a href="wireframe-link">View Wireframe</a></p>
+    </footer>
+</body>
+</html>
+
