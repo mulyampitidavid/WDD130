@@ -4,33 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Us page for our rafting company. Learn more about our history, mission, and adventures.">
-    <title>About Us | Rafting Company</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description" content="Learn more about our white water rafting company, our history, mission, and the adventures we offer.">
+    <title>About Us | White Water Rafting</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Rafting Company Logo" class="logo">
+        <h1>White Water Rafting Adventures</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <div class="hero">
+        <section class="hero">
             <img src="images/hero.jpg" alt="Rafting Adventure" class="hero-image">
-            <h1>Rafting Company</h1>
-            <article>
-                <h2>Our Mission</h2>
-                <img src="images/happy-client.jpg" alt="Happy Client" class="client-image">
-                <p>Our mission is to provide thrilling and unforgettable rafting experiences that bring you closer to nature. Join us for an adventure of a lifetime!</p>
-            </article>
-        </div>
+            <h1>About Our Company</h1>
+        </section>
+        
+        <section>
+            <h2>Our Mission</h2>
+            <img src="images/happy-client.jpg" alt="Happy Client" class="client-image">
+            <p>Our mission is to provide thrilling and unforgettable rafting experiences that bring you closer to nature. Join us for an adventure of a lifetime!</p>
+        </section>
 
         <section>
             <h2>History</h2>
@@ -39,20 +42,25 @@
 
         <section>
             <h2>Adventure Awaits You!</h2>
-            <img src="images/rafting1.jpg" alt="Rafting Adventure 1">
-            <img src="images/rafting2.jpg" alt="Rafting Adventure 2">
-            <img src="images/rafting3.jpg" alt="Rafting Adventure 3">
-            <img src="images/rafting4.jpg" alt="Rafting Adventure 4">
-            <img src="images/rafting5.jpg" alt="Rafting Adventure 5">
+            <div class="gallery">
+                <img src="images/rafting1.jpg" alt="Rafting Adventure 1">
+                <img src="images/rafting2.jpg" alt="Rafting Adventure 2">
+                <img src="images/rafting3.jpg" alt="Rafting Adventure 3">
+                <img src="images/rafting4.jpg" alt="Rafting Adventure 4">
+                <img src="images/rafting5.jpg" alt="Rafting Adventure 5">
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Rafting Company | Designed by Your Name</p>
-        <a href="#"><img src="images/social-facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="images/social-twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="images/social-instagram.png" alt="Instagram"></a>
+        <p>&copy; 2024 White Water Rafting Adventures | Designed by Your Name</p>
+        <div class="social-media">
+            <a href="#"><img src="images/social-facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/social-twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/social-instagram.png" alt="Instagram"></a>
+        </div>
     </footer>
 </body>
 
 </html>
+

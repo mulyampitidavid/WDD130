@@ -1,35 +1,126 @@
-/* Universal selector */
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    line-height: 1.6;
 }
 
-/* Class Selectors */
-.box {
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section h2 {
     color: #333;
 }
 
-/* Float profile image */
-.profile-image {
-    float: right;
-    margin: 0 0 1rem 1rem;
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
 }
 
-/* Overlay heading */
-aside {
-    position: relative;
+/* Home Page Styles */
+.cta {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
-.overlay {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 5px;
+.cta:hover {
+    background: #0056b3;
+}
+
+/* Trips Page Styles */
+.trip {
+    margin-bottom: 2rem;
+}
+
+/* Contact Page Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea, form button {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Additional Styles for the About Page */
+#team .employee {
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+}
+
+#team .employee img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Additional Styles for the Footer */
+footer .social-media {
+    margin-top: 1rem;
+}
+
+footer .social-media a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
 }
